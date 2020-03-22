@@ -6,7 +6,7 @@ This repository should be used as a base for creating a new wordpress project. I
 * **PHP CodeSniffer** for code that follows WordPress standards.
 * **WP CLI** for WordPress Core management.
 
-This starter project should be built upon to fit your project! For exmaple: gulp for assets and styles, CI/CD configuration.
+This starter project should be built upon to fit your project! For example: gulp for assets and styles, CI/CD configuration.
 
 ## Getting started
 See [prerequisites](#prerequisites) below.
