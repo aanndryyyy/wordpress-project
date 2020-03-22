@@ -1,0 +1,3 @@
+path: _wordpress
+disabled_commands:
+    - plugin install

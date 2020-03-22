@@ -1,0 +1,14 @@
+{
+    "name": "project",
+    "version": "1.0.0",
+    "main": "index.php",
+    "license": "proprietary",
+    "private": true,
+    "scripts": {
+        "install-wp": "wp core download --version=5.3.2 --skip-content --force",
+        "setup": "yarn run install-wp"
+    },
+    "stylelint": {
+        "enable": true
+    }
+}

@@ -1,0 +1,24 @@
+{
+	"extensions": {
+		"recommendations": [
+			"ikappas.phpcs"
+		]
+	},
+	"folders": [
+		{
+			"path": "./",
+			"name": "Project Root"
+		},
+		{
+			"path": "./_content/themes/theme",
+			"name": "Theme"
+		},
+		{
+			"path": "./_content/plugins/plugin",
+			"name": "Plugin"
+		}
+	],
+	"settings": {
+		"phpcs.enable": true
+	}
+}

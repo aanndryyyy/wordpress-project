@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
+
+	<!-- Exclude plugins -->
+	<exclude-pattern>/_wp-content/plugins/*</exclude-pattern>
+	<include-pattern>/_wp-content/plugins/plugin/*</include-pattern>
+
+	<!-- Exclude themes -->
+	<exclude-pattern>/_wp-content/themes/*</exclude-pattern>
+	<include-pattern>/_wp-content/themes/theme/*</include-pattern>
+
+	<!-- Exclude WP Core folders and files from being checked. -->
+	<exclude-pattern>/_wordpress/wp-admin/*</exclude-pattern>
+	<exclude-pattern>/_wordpress/wp-admin/*</exclude-pattern>
+	<exclude-pattern>/_wordpress/wp-includes/*</exclude-pattern>
+	<exclude-pattern>/_wordpress/wp-*.php</exclude-pattern>
+	<exclude-pattern>/_wordpress/index.php</exclude-pattern>
+	<exclude-pattern>/_wordpress/xmlrpc.php</exclude-pattern>
+
+	<!-- Exclude the Composer Vendor directory. -->
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+
+	<!-- Exclude the Node Modules directory. -->
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+
+	<!-- Exclude minified Javascript files. -->
+	<exclude-pattern>*.min.js</exclude-pattern>
+
+	<rule ref="WordPress-Extra">
+		<!-- Allow [] syntax for array() -->
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax" />
+
+		<!-- Allow <?= ?>, but <? ?> discouraged! -->
+		<exclude name="Generic.PHP.DisallowShortOpenTag" />
+	</rule>
+
+	<rule ref="WordPress-Docs"/>
+
+	<config name="minimum_supported_wp_version" value="5.3.2"/>
+
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="change-to-yours"/>
+				<!-- <element value="my-plugin"/> -->
+			</property>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="CHANGE_ME"/>
+				<!-- <element value="WP"/> -->
+			</property>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.Files.FileName">
+		<properties>
+			<!-- Uncomment if developing a theme! -->
+			<!-- <property name="is_theme" value="true"/> -->
+		</properties>
+	</rule>
+</ruleset>
