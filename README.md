@@ -1,9 +1,10 @@
-# Wordpress Project Starter
+# WordPress Project Starter
 
 This repository should be used as a base for creating a new wordpress project. It's designed to be used with GIT and to be developed with a team. Only the development files are included in GIT.
 
-* Plugins/themes managed by **Composer**.
-* WordPress Core managed by **WP CLI**.
+* **Composer** for plugins and theme management.
+* **PHP CodeSniffer** for code that follows WordPress standards.
+* **WP CLI** for WordPress Core management.
 
 ## Getting started
 See [prerequisites](#prerequisites) below.
