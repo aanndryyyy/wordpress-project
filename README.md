@@ -6,6 +6,8 @@ This repository should be used as a base for creating a new wordpress project. I
 * **PHP CodeSniffer** for code that follows WordPress standards.
 * **WP CLI** for WordPress Core management.
 
+This starter project should be built upon to fit your project! For exmaple: gulp for assets and styles, CI/CD configuration.
+
 ## Getting started
 See [prerequisites](#prerequisites) below.
 
@@ -22,7 +24,7 @@ As WordPress uses the database for data storage, it's requires additional manage
 1. Use lando.
 1. Use docker.
 
-To export or import data from one site to another (eg. local -> pre-live), you can use WP CLI. I've found it to be the fastest and most reliable. To make it work seamlessly, define `WP_HOME` and `WP_SITEURL` in wp-config.php or use [wp-cli again](https://wordpress.org/support/article/changing-the-site-url/#wp-cli)!
+To export or import data from one site to another (eg. local -> pre-live), you can use WP CLI. I've found it to be the most reliable. To make it work seamlessly, define `WP_HOME` and `WP_SITEURL` globals or use [wp-cli again](https://wordpress.org/support/article/changing-the-site-url/#wp-cli)!
 
 ## Prerequisites
 
