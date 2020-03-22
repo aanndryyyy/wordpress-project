@@ -6,6 +6,7 @@ This repository should be used as a base for creating a new wordpress project. I
 * WordPress Core managed by **WP CLI**.
 
 ## Getting started
+See [prerequisites](#prerequisites) below.
 
 1. Clone this repository.
 1. Run `composer install`.
@@ -21,3 +22,9 @@ As WordPress uses the database for data storage, it's requires additional manage
 1. Use docker.
 
 To export or import data from one site to another (eg. local -> pre-live), you can use WP CLI. I've found it to be the fastest and most reliable. To make it work seamlessly, define `WP_HOME` and `WP_SITEURL` in wp-config.php or use [wp-cli again](https://wordpress.org/support/article/changing-the-site-url/#wp-cli)!
+
+## Prerequisites
+
+1. [WP CLI](https://wp-cli.org/)
+1. [Composer](https://getcomposer.org/)
+1. [Yarn](https://yarnpkg.com/)
